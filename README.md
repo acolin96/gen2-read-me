@@ -1,8 +1,8 @@
 
-# read-me-generator
+# Read me generator
 
 ## Description
-I was tasked with creating the standard read me as a generator 
+This will auto generate a readme file based off the answers youve provided
 
 ## Table of Contents
 - [Installation](#installation)
@@ -13,16 +13,18 @@ I was tasked with creating the standard read me as a generator
 - [Questions](#questions)
 
 ## Installation
-Just visit the desired github repo to see the read-me generated
+inquirer
 
 ## Usage
-inteded use is to make writing readme's easier
+intended to use as a readme file
 
 ## License
-This application is covered under the MIT license.
+undefined
+[![License](https://img.shields.io/badge/License-undefined-green.svg)](https://opensource.org/licenses/undefined)
+
 
 ## Contributing
-you must edit at least one file to be counted as a contributor
+If you helped in anyway you will be considered as a contributor
 
 ## Tests
 testing

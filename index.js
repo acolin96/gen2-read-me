@@ -74,7 +74,9 @@ ${answers.installation}
 ${answers.usage}
 
 ## License
-This application is covered under the ${answers.license} license.
+${answers.licenses}
+[![License](https://img.shields.io/badge/License-${answers.licenses}-green.svg)](https://opensource.org/licenses/${answers.licenses})
+
 
 ## Contributing
 ${answers.contribution}
@@ -94,7 +96,7 @@ function promptUser() {
     .prompt(questions)
     .then((answers) => {
       const readmeContent = generateREADME(answers);
-      fs.writeFile('README.md', readmeContent, (err) => {
+      fs.writeFile('README.md', readmeContent, function (err) {
         if (err) {
           console.error(err);
         } else {
