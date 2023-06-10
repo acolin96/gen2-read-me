@@ -26,7 +26,7 @@ const questions = [
   {
     type: 'input',
     name: 'contribution',
-    message: 'Enter contribution guidelines:',
+    message: 'Enter contributors:',
   },
   {
     type: 'input',
@@ -74,8 +74,8 @@ ${answers.installation}
 ${answers.usage}
 
 ## License
-${answers.licenses}
-[![License](https://img.shields.io/badge/License-${answers.licenses}-green.svg)](https://opensource.org/licenses/${answers.licenses})
+${answers.license}
+[![License](https://img.shields.io/badge/License-${answers.license}-green.svg)](https://opensource.org/licenses/${answers.license})
 
 
 ## Contributing
@@ -92,22 +92,24 @@ You can also contact me via email: ${answers.email}
 
 // Function to prompt the user with questions and generate the README file
 function promptUser() {
-  inquirer
-    .prompt(questions)
-    .then((answers) => {
-      const readmeContent = generateREADME(answers);
-      fs.writeFile('README.md', readmeContent, function (err) {
-        if (err) {
-          console.error(err);
-        } else {
-          console.log('README.md file generated successfully!');
-        }
+    inquirer
+      .prompt(questions)
+      .then(function (answers) {
+        const readmeContent = generateREADME(answers);
+        fs.writeFile('README.md', readmeContent, function (err) {
+          if (err) {
+            console.error(err);
+          } else {
+            console.log('README.md file generated successfully!');
+          }
+        });
+      })
+      .catch(function (err) {
+        console.error(err);
       });
-    })
-    .catch((err) => {
-      console.error(err);
-    });
-}
+  }
+  
+
 
 // Call the promptUser function to start the application
 promptUser();

@@ -1,8 +1,8 @@
 
-# Read me generator
+# Professional readme file generator
 
 ## Description
-This will auto generate a readme file based off the answers youve provided
+This will automatically create the readme file for your project based on your answers
 
 ## Table of Contents
 - [Installation](#installation)
@@ -13,18 +13,18 @@ This will auto generate a readme file based off the answers youve provided
 - [Questions](#questions)
 
 ## Installation
-inquirer
+need to install inquirer
 
 ## Usage
-intended to use as a readme file
+Intended use is to make a readme file for your project
 
 ## License
-undefined
-[![License](https://img.shields.io/badge/License-undefined-green.svg)](https://opensource.org/licenses/undefined)
+MIT
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 
 ## Contributing
-If you helped in anyway you will be considered as a contributor
+Alex Colin
 
 ## Tests
 testing
